@@ -1,11 +1,7 @@
-num1 = float(input("Введіть перше число: "))
-num2 = float(input("Введіть друге число: "))
-num3 = float(input("Введіть третє число: "))
+zarplata = float(input("Введіть зарплату за місяць: "))
+kredit = float(input("Введіть суму місячного платежу за кредитом: "))
+komunalni_poslugy = float(input("Введіть заборгованість за комунальні послуги: "))
 
-suma = num1 + num2 + num3
+zastraha = zarplata - (kredit + komunalni_poslugy)
 
-
-dobutok = num1 * num2 * num3
-
-print(f"Сума чисел: {suma}")
-print(f"Добуток чисел: {dobutok}")
+print(f"Сума, яка залишиться у вас після всіх виплат: {zastraha}")
