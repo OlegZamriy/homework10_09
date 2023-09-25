@@ -1,7 +1,7 @@
-zarplata = float(input("Введіть зарплату за місяць: "))
-kredit = float(input("Введіть суму місячного платежу за кредитом: "))
-komunalni_poslugy = float(input("Введіть заборгованість за комунальні послуги: "))
+d1 = float(input("Введіть довжину першої діагоналі ромба: "))
 
-zastraha = zarplata - (kredit + komunalni_poslugy)
+d2 = float(input("Введіть довжину другої діагоналі ромба: "))
 
-print(f"Сума, яка залишиться у вас після всіх виплат: {zastraha}")
+ploshcha = (d1 * d2) / 2
+
+print(f"Площа ромба з діагоналями {d1} і {d2} дорівнює {ploshcha}")
